@@ -17,11 +17,11 @@ const ServiceCard = ({ place }) => {
             {place.name}
           </h3>
           <h4 className="font-semibold text-sm mb-2 mt-1 md:mt-0">
-            {place.category}
+            Type: {place.category}
           </h4>
           <h5 className="font-semibold text-sm mb-2 mt-1 md:mt-0">
             {place?.providers[0]?.name && (
-              <p>Provider:{place?.providers[0]?.name}</p>
+              <p>Provider: {place?.providers[0]?.name}</p>
             )}
           </h5>
 

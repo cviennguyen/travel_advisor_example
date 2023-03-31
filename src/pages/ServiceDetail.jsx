@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "../apis/axios";
 import { Navbar, Footer } from "../components";
@@ -130,6 +130,17 @@ const ServiceDetail = () => {
           primaryColor="#00afef"
           secondaryColor="#e5e7eb"
         />
+        <Link
+          to={{
+            pathname: `/list/${id}/review`,
+            state: {
+              service: service,
+            },
+          }}
+          className="bg-blue-500 text-white px-4 py-2 rounded-lg mb-10"
+        >
+          Add a review
+        </Link>
         {service?.reviews?.map((review) => (
           <div className="flex flex-col border-b-2 py-10">
             <div className="flex items-center w-[15rem]	">

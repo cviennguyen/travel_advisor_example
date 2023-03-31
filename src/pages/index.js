@@ -12,3 +12,4 @@ export { default as List } from "./ServiceList";
 export { default as ServiceDetail } from "./ServiceDetail";
 export { default as PageNotFound } from "./PageNotFound";
 export { default as Favorites } from "./Favorites";
+export { default as Review } from "./Review";

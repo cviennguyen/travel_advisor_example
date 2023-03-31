@@ -15,6 +15,7 @@ import {
   ServiceDetail,
   PageNotFound,
   Favorites,
+  Review,
 } from "./pages";
 import { PlaceDetails } from "./pages/templates";
 import { ToastContainer } from "react-toastify";
@@ -27,13 +28,14 @@ const App = () => {
         <Route exact path={"/"}>
           <Home />
         </Route>
-        {/* <Route path={"/map"}>
-            <MapView />
-          </Route> */}
+        <Route path={"/map"}>
+          <MapView />
+        </Route>
 
         <Route exact path={"/favorites"}>
           <Favorites />
         </Route>
+
         {/* <Route exact path={"/hotels"}>
           <HotelsList />
         </Route>
@@ -43,9 +45,13 @@ const App = () => {
         <Route path={"/search"}>
           <SearchResult />
         </Route>
+        <Route exact path={"/list/:id/review"}>
+          <Review />
+        </Route>
         <Route path={"/list/:id"}>
           <ServiceDetail />
         </Route>
+
         <Route exact path={"/:type/:id"}>
           <PlaceDetails />
         </Route>
