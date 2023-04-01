@@ -14,3 +14,4 @@ export { default as PageNotFound } from "./PageNotFound";
 export { default as Favorites } from "./Favorites";
 export { default as Review } from "./Review";
 export { default as AdminPanel } from "./AdminPanel";
+export { default as ProviderPanel } from "./ProviderPanel";

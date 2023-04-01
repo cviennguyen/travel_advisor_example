@@ -17,6 +17,7 @@ import {
   Favorites,
   Review,
   AdminPanel,
+  ProviderPanel,
 } from "./pages";
 import { PlaceDetails } from "./pages/templates";
 import { ToastContainer } from "react-toastify";
@@ -54,6 +55,9 @@ const App = () => {
         </Route>
         <Route path={"/admin-panel"}>
           <AdminPanel />
+        </Route>
+        <Route path={"/provider-panel"}>
+          <ProviderPanel />
         </Route>
         <Route exact path={"/:type/:id"}>
           <PlaceDetails />

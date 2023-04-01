@@ -14,15 +14,13 @@ const ServiceCard = ({ place }) => {
         <div className="w-full self-start">
           {/* Result Object Name */}
           <h3 className="font-semibold text-lg mb-2 mt-1 md:mt-0">
-            {place.name}
+            {place?.name}
           </h3>
           <h4 className="font-semibold text-sm mb-2 mt-1 md:mt-0">
-            Type: {place.category}
+            Type: {place?.category}
           </h4>
           <h5 className="font-semibold text-sm mb-2 mt-1 md:mt-0">
-            {place?.providers[0]?.name && (
-              <p>Provider: {place?.providers[0]?.name}</p>
-            )}
+            <p>Provider: {place?.providers?.name}</p>
           </h5>
 
           {/* --- */}
