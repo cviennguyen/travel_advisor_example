@@ -16,6 +16,7 @@ import {
   PageNotFound,
   Favorites,
   Review,
+  AdminPanel,
 } from "./pages";
 import { PlaceDetails } from "./pages/templates";
 import { ToastContainer } from "react-toastify";
@@ -28,9 +29,9 @@ const App = () => {
         <Route exact path={"/"}>
           <Home />
         </Route>
-        <Route path={"/map"}>
+        {/* <Route path={"/map"}>
           <MapView />
-        </Route>
+        </Route> */}
 
         <Route exact path={"/favorites"}>
           <Favorites />
@@ -51,7 +52,9 @@ const App = () => {
         <Route path={"/list/:id"}>
           <ServiceDetail />
         </Route>
-
+        <Route path={"/admin-panel"}>
+          <AdminPanel />
+        </Route>
         <Route exact path={"/:type/:id"}>
           <PlaceDetails />
         </Route>

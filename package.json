@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@material-tailwind/react": "^1.4.2",
     "@react-google-maps/api": "^2.7.0",
     "axios": "^0.26.1",
     "google-map-react": "^2.1.10",

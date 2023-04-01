@@ -90,7 +90,7 @@ const Navbar = ({ sticky, border }) => {
             </NavLink>
           )}
           {loggedIn?.data?.user?.role === "admin" && (
-            <NavLink to={"provider-panel"}>
+            <NavLink to={"admin-panel"}>
               <li className="rounded-full hover:bg-gray-200 py-2 px-3 cursor-pointer">
                 <p className="flex font-medium items-center">
                   <svg viewBox="0 0 24 24" className="w-6 h-6 mr-2">

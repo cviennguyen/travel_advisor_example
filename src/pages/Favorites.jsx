@@ -32,6 +32,7 @@ const Favorites = () => {
     <>
       <Navbar sticky />
       <div className="container mx-auto p-4 block space-x-2">
+        <p className="text-2xl text-center font-bold">Favorites</p>
         {favorites?.map((favorite) => (
           <Link to={`/list/${favorite?.service._id}`}>
             <ServiceCard key={favorite?._id} place={favorite.service} />
